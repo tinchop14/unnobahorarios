@@ -25,6 +25,11 @@
                 "input": "src/assets",
                 "output": "assets"
               },
+                  {
+      "glob": "**/*",
+      "input": "node_modules/ngx-extended-pdf-viewer/assets/",
+      "output": "/assets/"
+    },
               {
                 "glob": "**/*.svg",
                 "input": "node_modules/ionicons/dist/ionicons/svg",
@@ -39,7 +44,11 @@
                 "input": "src/global.scss"
               }
             ],
-            "scripts": []
+            "scripts": [
+                "node_modules/ngx-extended-pdf-viewer/assets/pdf.js",
+                "node_modules/ngx-extended-pdf-viewer/assets/pdf.worker.js",
+                "node_modules/ngx-extended-pdf-viewer/assets/viewer.js"
+            ]
           },
           "configurations": {
             "production": {
